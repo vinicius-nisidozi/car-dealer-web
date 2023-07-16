@@ -162,6 +162,8 @@ html{
   margin-bottom: 1.2rem;
 }
 
+/*media queries*/
+
 @media (max-width: 1350px) {
   .cards{
     flex-direction: column;
@@ -189,6 +191,23 @@ html{
   }
 }
 
-@media (mad-width: 900px) {
+@media (max-width: 900px) {
+  .content .list-menu{
+    display: none;
+  }
 
+  .one,
+  .two,
+  .three{
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin: 6px auto;
+    transition-duration: 0.5s;
+  }
+
+  .menu-toggle{
+    width: 30px;
+    height: 30px;
+  }
 }
