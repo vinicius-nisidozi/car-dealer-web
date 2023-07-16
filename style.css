@@ -80,7 +80,7 @@ html{
   background-color: #EFEFEF;
   border-radius: 1.4rem;
   width: 95vw;
-  height: 60vh;
+  height: 70vh;
   margin-bottom: 6rem;
 }
 
@@ -117,14 +117,16 @@ html{
 
 .cards{
   display: flex;
+  justify-content: center;
   flex-direction: row;
   margin-top: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .card img{
-  width: 85%;
+  width: 300px;
+  height: 200px;
   margin-top: 2rem;
 }
 
@@ -152,7 +154,7 @@ html{
 .specs li{
   font-size: 1.4rem;
   margin-top: 0.3rem;
-  padding: 1rem 4rem 1rem 0rem;
+  padding: 0.5rem 4rem 1rem 0rem;
 }
 
 .card .price{
