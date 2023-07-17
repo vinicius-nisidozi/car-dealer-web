@@ -162,6 +162,43 @@ html{
   margin-bottom: 1.2rem;
 }
 
+/*contatos*/
+.contato{
+  width: 100%;
+  background-color: black;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.4rem;
+  padding-bottom: 4rem;
+}
+
+.contato h3{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.wpp{
+  margin-bottom: 2rem;
+}
+
+.contact-section div{
+  cursor:pointer;
+}
+
+footer{
+  height:25px;
+  background-color: black;
+  color: #EFEFEF;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*media queries*/
 
 @media (max-width: 1350px) {
@@ -175,19 +212,40 @@ html{
   }
 
   .first-section{
-    background-image: linear-gradient(white,white)
+    flex-direction: column;
+    height: auto;
+    background-image: linear-gradient(rgb(22, 22, 22),rgb(145, 53, 46));
   }
 
   .first-section .main-content{
+    margin-top: 2rem;
+    height: auto;
     background-color: white;
+  }
+
+  .first-section .main-content h1{
+    margin-top: 1.4rem;
   }
 
   .first-section h1{
     margin-top: 0rem;
   }
 
-.card:hover{
+  .card:hover{
   background-color: #f1f1f1;
+  }
+
+  .contato{
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -210,4 +268,50 @@ html{
     width: 30px;
     height: 30px;
   }
+
+  .content.on{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content.on .logo{
+    display: none;
+  }
+
+  .content.on .menu-toggle{
+    position: absolute;
+    right: 40px;
+    top:20px;
+  }
+
+  .content.on .list-menu{
+    display: block;
+  }
+
+  .content.on .list-menu li{
+    display: flex;
+    justify-content: center;
+  }
+
+  .content.on .menu-toggle .two{
+    opacity: 0;
+  }
+
+  .content.on .menu-toggle .one{
+    transform: rotate(45deg) translate(5px, -8px);
+  }
+
+  .content.on .menu-toggle .three{
+    transform: rotate(-45deg) translate(20px, -6px);
+  }
+
 }
